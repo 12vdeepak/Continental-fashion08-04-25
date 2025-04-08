@@ -1,0 +1,230 @@
+/* ========font import =========== */
+
+/* Euclier A */
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+
+/* Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* font import end  */
+
+/* variables -start  */
+:root {
+    --font-primary: "Euclid Circular A", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+    --background-primary: #54114c;
+    --text-white: #ffffff;
+    --text-black: #171b1e;
+    --text-grey: #6e6e6e;
+}
+/* @layer utilities {
+    .font-primary {
+        font-family: var(--font-primary);
+    }
+    .font-secondary {
+        font-family: var(--font-secondary);
+    }
+    .bg-primary {
+        background-color: var(--background-primary);
+    }
+    .text-white{
+        color:var(--text-white);
+    }
+    .text-black{
+        color: var(--text-black);
+    }
+    .text-grey{
+        color: var(--text-grey);
+    }
+
+
+
+
+} */
+/* variables -end  */
+
+/* =========================
+   🌎 Global Styles
+   ========================= */
+
+/* 🔹 Reset & Base Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling for Navbar */
+
+.logo {
+    font-family: var(--font-primary);
+}
+
+/* header nav css */
+.white_nav_bottom {
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.HeadernavItems li {
+    padding: 6px;
+}
+
+.HeadernavItems li:hover {
+    border-bottom: 2px #54114c solid;
+}
+
+/* Footer css */
+.footer_Section {
+    background-color: var(--text-black);
+    font-family: var(--font-primary);
+}
+
+.footerNavLinks li {
+    text-decoration: none;
+    color: var(--text-grey);
+    padding-top: 8px;
+}
+
+/* Login Page styling  */
+
+.loginHeading {
+    font-family: var(--font-primary);
+}
+.registerHeading {
+    font-family: var(--font-primary);
+    font-weight: 600;
+}
+
+#toRegister {
+    background-image: url("frontend/assets/images/loginPageRegisBackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire container */
+}
+
+/* =========================== index.html =========================================================  */
+
+/* =========================== STYLING FOR THE  HERO SECTION =================================== */
+
+.heading_description .title {
+    font-family: var(--font-primary);
+}
+
+/* =========================== STYLING FOR THE  BENIFITS OF PURCHASING FROM US SECTION =================================== */
+
+.madeInGermany {
+    background-image: url("frontend/assets/images/madeInGerman.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titleGermany {
+    font-family: var(--font-primary);
+}
+
+.priceAndStock {
+    background-image: url("frontend/assets/images/priceAndStockImage.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+.highStock {
+    background-image: url("frontend/assets/images/highStock.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+.returnPolicy {
+    background-image: url("frontend/assets/images/handshake.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    font-family: var(--font-primary);
+}
+
+.custom-gradient {
+    background: linear-gradient(
+        179.83deg,
+        rgba(0, 0, 0, 0) 49.41%,
+        rgba(0, 0, 0, 0.8) 87.34%
+    );
+}
+
+/* =========================== STYLING FOR THE POPULAR CATEGORY SECTION =================================== */
+
+.heading_popular_category {
+    font-family: var(--font-primary);
+}
+.heading_news_offer {
+    font-family: var(--font-primary);
+}
+
+.headingShort {
+    font-family: var(--font-primary);
+}
+
+/* ======================= Styling for footer pages =========================== */
+
+.heading {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.headingCus,
+.productHead {
+    font-family: var(--font-primary);
+}
+
+.description {
+    font-size: 16px;
+    color: #6e6e6e;
+}
+
+/* ======================= all product filter drop down ===================== */
+
+.filterDropDown {
+    font-family: var(--font-primary);
+}
+
+/* ======= gallery part of all product ========== */
+
+.poster {
+    background-image: url("frontend/assets/images/poster.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+
+    font-family: var(--font-primary);
+}
+
+.redGradient {
+    background: linear-gradient(
+        89.99deg,
+        rgba(0, 0, 0, 0) -2.79%,
+        #e2001a 99.99%
+    );
+}
+
+/* ==================product gallery section in all product ================= */
+
+.productTitle {
+    font-family: var(--font-primary);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

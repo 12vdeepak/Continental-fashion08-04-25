@@ -1,0 +1,52 @@
+@extends('backend.layouts.app')
+@section('title', 'Admin - Privacy-Policy')
+@section('content')
+    <div class="content-wrapper">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="mb-2 row">
+                    <div class="col-sm-6">
+                        <h1>Privacy Policy</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                            <li class="breadcrumb-item active">Privacy Policy</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @if (session('success'))
+            <div class="card-body">
+                <div class="alert alert-success alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <h5>{{ Session::get('success') }}</h5>
+                    <?php Session::forget('success'); ?>
+                </div>
+            </div>
+        @endif
+
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                {!! $privacy->description !!}
+                            </div>
+
+                            <div class="card-footer">
+                                <a href="{{ route('privacy.edit', ['privacy' => $privacy]) }}"
+                                    class="btn btn-primary">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+@endsection
