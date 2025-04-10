@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h2>Guten Tag, {{ $first_name }},</h2>
+    <h2>Guten Tag, Herr/Frau {{ $first_name }},</h2>
 
     <p>vielen Dank für Ihre Anmeldung und Ihr Interesse an einer Zusammenarbeit mit uns.</p>
 
