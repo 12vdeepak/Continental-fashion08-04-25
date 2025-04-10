@@ -2,16 +2,16 @@
 <div
     class="white_nav_bottom z-100 text-gray-900 px-4 md:px-[120px] py-4 lg:py-8 flex justify-between items-center relative">
     <!-- Hamburger Button (Mobile) -->
-    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+    <button id="menu-btn" class="text-3xl md:hidden focus:outline-none">
         ☰
     </button>
 
     <!-- Navigation Menu -->
     <ul id="nav-menu"
-        class="HeadernavItems z-300 fixed inset-0 bg-white md:bg-transparent md:static  h-screen md:h-auto flex flex-col md:flex-row md:space-x-12 items-center justify-center transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out">
+        class="fixed inset-0 flex flex-col items-center justify-center h-screen transition-transform duration-300 ease-in-out transform -translate-x-full bg-white HeadernavItems z-300 md:bg-transparent md:static md:h-auto md:flex-row md:space-x-12 md:translate-x-0">
 
         <!-- Close Button -->
-        <button id="close-menu" class="absolute top-5 right-5 text-3xl md:hidden">
+        <button id="close-menu" class="absolute text-3xl top-5 right-5 md:hidden">
             ✖
         </button>
 
@@ -27,8 +27,7 @@
                 hidden md:absolute md:left-0 md:hidden">
 
                 <div
-                    class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
-                    gap-4 bg-white p-5">
+                    class="container grid grid-cols-1 gap-4 p-5 mx-auto bg-white sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
                     @php
                         $firstSixCategories = $categories->take(6);
@@ -36,13 +35,13 @@
 
                     @foreach ($firstSixCategories as $category)
                         <div class="space-y-2">
-                            <h3 class="font-bold text-black text-lg whitespace-nowrap">{{ $category->category_name }}
+                            <h3 class="text-lg font-bold text-black whitespace-nowrap">{{ $category->category_name }}
                             </h3>
-                            <ul class="text-gray-600 space-y-1">
+                            <ul class="space-y-1 text-gray-600">
                                 @foreach ($category->subcategories->take(6) as $subcategory)
                                     <li>
                                         <a href="{{ route('frontend.subcategory.products', $subcategory->id) }}"
-                                            class="hover:text-black hover:underline block whitespace-nowrap">
+                                            class="block hover:text-black hover:underline whitespace-nowrap">
                                             {{ $subcategory->subcategory_name }}
                                         </a>
                                     </li>
@@ -58,10 +57,7 @@
 
 
         <li>
-            <a href="{{ session()->has('company_user_id') ? route('frontend.aboutus') : route('frontend.login') }}"
-                class="transition hover:text-purple-400">
-                About Us
-            </a>
+            <a href="{{ route('frontend.aboutus') }}">About Us</a>
         </li>
 
 
