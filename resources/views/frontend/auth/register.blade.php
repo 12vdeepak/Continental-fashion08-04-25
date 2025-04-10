@@ -360,12 +360,12 @@
 
                 <div class="flex flex-col gap-1">
 
-                    <label for="note">Enter your note <span class="text-red-500">*</span></label>
-                    <textarea id="note" name="note" placeholder="Write Your Note Here..."
-                        class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 h-32 overflow-hidden resize-none @error('note') is-invalid @enderror">{{ old('note') }}</textarea>
-                    @error('note')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
+                    <label for="note">Enter your note < /label>
+                            <textarea id="note" name="note" placeholder="Write Your Note Here..."
+                                class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 h-32 overflow-hidden resize-none @error('note') is-invalid @enderror">{{ old('note') }}</textarea>
+                            @error('note')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                 </div>
 
                 <div class="flex gap-2">

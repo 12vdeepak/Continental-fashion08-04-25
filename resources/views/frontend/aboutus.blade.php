@@ -134,8 +134,8 @@
                     <div class="flex justify-between w-full gap-5 sectionSecond">
                         <div
                             class="relative lg:h-[320px] h-[20vh] w-1/2 rounded-3xl flex justify-center items-center items-end">
-                            <img src="{{ asset('frontend/assets/images/high2.jpeg') }}" alt="Affordable Prices"
-                                class="absolute inset-0 object-cover w-full h-full rounded-3xl">
+                            <img src="{{ asset('frontend/assets/images/Warehouse & Logistics_With text.png') }}"
+                                alt="Affordable Prices" class="absolute inset-0 object-cover w-full h-full rounded-3xl">
                             <div
                                 class="titleHighStock mb-5 text-[#FFFFFF] text-lg font-bold text-center lg:text-[32px] z-2">
                             </div>
