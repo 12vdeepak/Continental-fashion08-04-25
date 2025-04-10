@@ -108,14 +108,14 @@
                     <div
                         class="relative lg:h-[320px] h-[20vh] w-1/2 rounded-3xl flex justify-center items-center items-end">
                         <img src="{{ asset('frontend/assets/images/high4.jpeg') }}" alt="High Stock Availability"
-                            class="absolute inset-0 w-full h-full object-cover rounded-3xl">
+                            class="absolute inset-0 object-cover w-full h-full rounded-3xl">
                         <div class="titleHighStock mb-5 text-[#FFFFFF] text-lg font-bold text-center lg:text-[32px] z-2">
                         </div>
                     </div>
                     <div
                         class="relative lg:h-[320px] h-[20vh] w-1/2 rounded-3xl flex justify-center items-center items-end">
                         <img src="{{ asset('frontend/assets/images/high3.jpeg') }}" alt="Fast & Secure Delivery"
-                            class="absolute inset-0 w-full h-full object-cover rounded-3xl">
+                            class="absolute inset-0 object-cover w-full h-full rounded-3xl">
                         <div class="titleHighStock mb-5 text-[#FFFFFF] text-lg font-bold text-center lg:text-[32px] z-2">
                         </div>
                     </div>
@@ -124,14 +124,14 @@
                     <div
                         class="relative lg:h-[320px] h-[20vh] w-1/2 rounded-3xl flex justify-center items-center items-end">
                         <img src="{{ asset('frontend/assets/images/high2.jpeg') }}" alt="Affordable Prices"
-                            class="absolute inset-0 w-full h-full object-cover rounded-3xl">
+                            class="absolute inset-0 object-cover w-full h-full rounded-3xl">
                         <div class="titleHighStock mb-5 text-[#FFFFFF] text-lg font-bold text-center lg:text-[32px] z-2">
                         </div>
                     </div>
                     <div
                         class="relative lg:h-[320px] h-[20vh] w-1/2 rounded-3xl flex justify-center items-center items-end">
                         <img src="{{ asset('frontend/assets/images/high1.jpeg') }}" alt="Customer Support 24/7"
-                            class="absolute inset-0 w-full h-full object-cover rounded-3xl">
+                            class="absolute inset-0 object-cover w-full h-full rounded-3xl">
                         <div class="titleHighStock mb-5 text-[#FFFFFF] text-lg font-bold text-center lg:text-[32px] z-2">
                         </div>
                     </div>
@@ -302,7 +302,7 @@
                     <div class="mb-2 bigRoundSvg">
                         <img src="{{ asset('frontend/assets/images/rocket.svg') }}" alt="">
                     </div>
-                    <div class="headingShort text-[24px] font-medium mt-5 mb-3  ">More than 35 years of experience </div>
+                    <div class="headingShort text-[24px] font-medium mt-5 mb-3  ">Serving You for More Than 35 Years </div>
                     <div class="content text-[16px] text-[#6E6E6E] w-[90%]">
                         <p>
 
