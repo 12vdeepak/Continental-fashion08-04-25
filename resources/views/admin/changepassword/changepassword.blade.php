@@ -63,9 +63,16 @@
 
                                 <div class="form-group">
                                     <label for="current_password">Current Password</label>
-                                    <input id="current_password" type="password"
-                                        class="form-control @error('current_password') is-invalid @enderror"
-                                        name="current_password" required>
+                                    <div class="input-group">
+                                        <input id="current_password" type="password"
+                                            class="form-control @error('current_password') is-invalid @enderror"
+                                            name="current_password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text toggle-password" toggle="#current_password">
+                                                <i class="fas fa-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                     @error('current_password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -75,9 +82,16 @@
 
                                 <div class="form-group">
                                     <label for="new_password">New Password</label>
-                                    <input id="new_password" type="password"
-                                        class="form-control @error('new_password') is-invalid @enderror"
-                                        name="new_password" required>
+                                    <div class="input-group">
+                                        <input id="new_password" type="password"
+                                            class="form-control @error('new_password') is-invalid @enderror"
+                                            name="new_password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text toggle-password" toggle="#new_password">
+                                                <i class="fas fa-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                     @error('new_password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -87,9 +101,18 @@
 
                                 <div class="form-group">
                                     <label for="new_password_confirmation">Confirm New Password</label>
-                                    <input id="new_password_confirmation" type="password" class="form-control"
-                                        name="new_password_confirmation" required>
+                                    <div class="input-group">
+                                        <input id="new_password_confirmation" type="password" class="form-control"
+                                            name="new_password_confirmation" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text toggle-password"
+                                                toggle="#new_password_confirmation">
+                                                <i class="fas fa-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
 
                             <!-- /.card-body -->
