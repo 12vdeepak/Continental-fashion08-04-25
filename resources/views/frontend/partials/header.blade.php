@@ -87,7 +87,7 @@
                         class="w-10 h-10 md:w-6 md:h-6"> <!-- Larger icon for mobile -->
                 </a>
                 <a href="{{ route('frontend.login') }}">
-                    <span class="hidden md:flex text-base"> Login </span>
+                    <span class="hidden text-base md:flex"> Login </span>
                 </a>
             @endif
         </div>
@@ -141,10 +141,17 @@
         </div>  --}}
 
 
-        <div class="flex items-center gap-5">
+        {{--  <div class="flex items-center gap-5">
             <!-- Google Translate Dropdown -->
             <div id="google_translate_element"></div>
+        </div>  --}}
+
+        <div class="flex items-center gap-4">
+            <span class="text-base text-white">Select Language</span>
+            <div id="google_translate_element"></div>
         </div>
+
+
 
 
 
@@ -201,55 +208,185 @@
         );
     }
 </script>
+<script>
+    // Remove the top iframe (banner)
+    document.addEventListener("DOMContentLoaded", function() {
+        let interval = setInterval(function() {
+            const bannerFrame = document.querySelector(".goog-te-banner-frame");
+            if (bannerFrame) {
+                bannerFrame.style.display = "none";
+                document.body.style.top = "0px";
+                clearInterval(interval);
+            }
+        }, 100); // Check every 100ms until it's gone
+    });
+</script>
+<script>
+    // Keep removing banner if it appears dynamically
+    function removeGoogleTranslateBanner() {
+        let banner = document.querySelector('.goog-te-banner-frame');
+        let htmlEl = document.documentElement;
+
+        if (banner) {
+            banner.style.display = 'none';
+        }
+
+        if (htmlEl.style.top) {
+            htmlEl.style.top = '0px';
+        }
+
+        document.body.style.top = '0px';
+    }
+
+    // Run immediately and keep checking every second
+    setInterval(removeGoogleTranslateBanner, 1000);
+</script>
+
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<style>
-    /* Hide Google Translate's top toolbar */
-    .goog-te-banner-frame {
+{{--  <style>
+    /* Hide top frame (Google Translate toolbar) */
+    .goog-te-banner-frame.skiptranslate {
         display: none !important;
     }
 
+    /* Prevent body from getting pushed down */
     body {
         top: 0px !important;
+        position: relative !important;
     }
 
-    /* Hide Google Translate's inline toolbar */
+    /* Optional: hide any leftover Google elements */
+    .goog-te-gadget-icon,
+    .goog-te-menu-value span,
+    .goog-te-menu-frame,
+    .goog-te-balloon-frame {
+        display: none !important;
+    }
+</style>  --}}
+
+<style>
+    /* Hide the Google Translate banner frame */
+    .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+    }
+
+    /* Prevent body from being pushed down by Google Translate */
+    body {
+        top: 0px !important;
+        position: static !important;
+    }
+
+    /* Hide overlay that dims the site */
+    .goog-te-banner-frame,
+    .goog-te-balloon-frame {
+        display: none !important;
+    }
+
+    /* Hide additional UI elements */
+    .goog-te-menu-value span,
+    .goog-te-gadget-icon {
+        display: none !important;
+    }
+
+    /* Optional: hide the pop-up */
+    iframe[id^=":"] {
+        display: none !important;
+    }
+
+    /* Container of Google Translate element */
+    #google_translate_element {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 20px;
+        background-color: #4b0a49;
+        /* Matching your theme */
+    }
+
+    /* Google Translate dropdown styling */
+    .goog-te-combo {
+        padding: 6px 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #fff;
+        color: #333;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
+    /* Optional: on focus/hover */
+    .goog-te-combo:focus,
+    .goog-te-combo:hover {
+        border-color: #4b0a49;
+        outline: none;
+    }
+
+    /* Hide Google logo (optional) */
+    .goog-logo-link {
+        display: none !important;
+    }
+
+    /* Hide powered by text (optional) */
     .goog-te-gadget span {
         display: none !important;
     }
 
-
-
-
-    #dropdownMenu {
-        position: absolute;
-        top: 74%;
-        /* Positions the dropdown below the button */
-        right: -45;
-        z-index: 10;
-        /* Ensures it stays above other elements */
-        min-width: 150px;
-        /* Adjust width as needed */
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 8px 0;
+    #google_translate_element span {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 500;
     }
 
-    #dropdownMenu a {
-        display: block;
-        padding: 0px 12px;
-        color: #333;
-        text-decoration: none;
-    }
-
-    #dropdownMenu a:hover {
-        background-color: #f5f5f5;
-    }
-
-    /* Ensure the parent button has relative positioning */
-    #dropdownButton {
-        position: relative;
+    /* Google Translate dropdown styling */
+    .goog-te-combo {
+        padding: 10px 14px !important;
+        font-size: 16px !important;
+        border: 1px solid #ccc !important;
+        border-radius: 8px !important;
+        background-color: #fff !important;
+        color: #333 !important;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+        cursor: pointer !important;
+        min-width: 180px !important;
     }
 </style>
+
+{{--  <style>
+    /* Parent container to flex-align */
+    .top-right-options {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Dropdown label */
+    #google_translate_element::before {
+        content: "Select Language:";
+        font-size: 14px;
+        margin-right: 5px;
+        color: white;
+    }
+
+    /* Google Translate dropdown */
+    #google_translate_element .goog-te-combo {
+        padding: 6px 10px;
+        font-size: 13px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer;
+    }
+
+    /* Remove Google branding */
+    .goog-logo-link,
+    .goog-te-gadget span {
+        display: none !important;
+    }
+
+    /* Remove default margin if any */
+    #google_translate_element {
+        margin: 0 !important;
+    }
+</style>  --}}
