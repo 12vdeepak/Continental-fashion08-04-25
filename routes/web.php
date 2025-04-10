@@ -218,6 +218,7 @@ Route::get('/about-us', [FrontendController::class, 'aboutUs'])->name('frontend.
 
 
 
+Route::get('/subcategory/{id}', [FrontendProductController::class, 'subcategoryProducts'])->name('frontend.subcategory.products');
 
 
 
