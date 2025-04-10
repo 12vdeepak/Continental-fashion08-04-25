@@ -345,11 +345,11 @@
                         </div>
                         <div class="flex flex-col gap-2 mt-3 instructionBusinessReg">
                             <p class="text-sm font-medium text-blue-500">Note: Upload only pdf</p>
-                            <p class="text-[#6E6E6E]"> <span class="font-medium text-zinc-700"> Alternatively: </span>
-                                Send your business registration afterwards</p>
-                            <p class="text-[#6E6E6E]">By Mail to: MAPROM GmbH, Rohrweg 33, 37671 Höxter</p>
+                            {{--  <p class="text-[#6E6E6E]"> <span class="font-medium text-zinc-700"> Alternatively: </span>
+                                Send your business registration afterwards</p>  --}}
+                            {{--  <p class="text-[#6E6E6E]">By Mail to: MAPROM GmbH, Rohrweg 33, 37671 Höxter</p>  --}}
                             <!-- <p class="text-[#6E6E6E]">By Fax to: 05271 9719-99</p> -->
-                            <p class="text-[#6E6E6E]">By E-mail to: info@maprom.de</p>
+                            {{--  <p class="text-[#6E6E6E]">By E-mail to: info@maprom.de</p>  --}}
 
 
                         </div>
