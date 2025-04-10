@@ -116,7 +116,8 @@
                     <div class="flex justify-between w-full gap-5 sectionSecond">
                         <div
                             class="relative lg:h-[320px] h-[20vh] w-1/2 rounded-3xl flex justify-center items-center items-end">
-                            <img src="{{ asset('frontend/assets/images/high4.jpeg') }}" alt="High Stock Availability"
+                            <img src="{{ asset('frontend/assets/images/Stock item available immediately_small text.png') }}"
+                                alt="High Stock Availability"
                                 class="absolute inset-0 object-cover w-full h-full rounded-3xl">
                             <div
                                 class="titleHighStock mb-5 text-[#FFFFFF] text-lg font-bold text-center lg:text-[32px] z-2">
@@ -124,7 +125,8 @@
                         </div>
                         <div
                             class="relative lg:h-[320px] h-[20vh] w-1/2 rounded-3xl flex justify-center items-center items-end">
-                            <img src="{{ asset('frontend/assets/images/high3.jpeg') }}" alt="Fast & Secure Delivery"
+                            <img src="{{ asset('frontend/assets/images/Conception & Design_Small text.png') }}"
+                                alt="Fast & Secure Delivery"
                                 class="absolute inset-0 object-cover w-full h-full rounded-3xl">
                             <div
                                 class="titleHighStock mb-5 text-[#FFFFFF] text-lg font-bold text-center lg:text-[32px] z-2">
@@ -142,8 +144,8 @@
                         </div>
                         <div
                             class="relative lg:h-[320px] h-[20vh] w-1/2 rounded-3xl flex justify-center items-center items-end">
-                            <img src="{{ asset('frontend/assets/images/high1.jpeg') }}" alt="Customer Support 24/7"
-                                class="absolute inset-0 object-cover w-full h-full rounded-3xl">
+                            <img src="{{ asset('frontend/assets/images/Sourcing & Procurement_Small text.png') }}"
+                                alt="Customer Support 24/7" class="absolute inset-0 object-cover w-full h-full rounded-3xl">
                             <div
                                 class="titleHighStock mb-5 text-[#FFFFFF] text-lg font-bold text-center lg:text-[32px] z-2">
                             </div>
