@@ -234,6 +234,27 @@
         @endif
     </script>
 
+
+    <script>
+        document.querySelectorAll('.toggle-password').forEach(function(el) {
+            el.addEventListener('click', function() {
+                const input = document.querySelector(el.getAttribute('toggle'));
+                const icon = el.querySelector('i');
+
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    input.type = 'password';
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            });
+        });
+    </script>
+
+
     <!-- Add this JavaScript to the bottom of your form -->
     {{--  <script>
         // When product images are selected
@@ -808,7 +829,7 @@
                 "#C0C0C0": "Silver / Silver Grey,
 
                 // Shades of Gray
-             
+
                 "#808080": "Gray",
                 "#696969": "DimGray",
                 "#A9A9A9": "DarkGray",
@@ -1102,7 +1123,7 @@
                 "#C0C0C0": "Silver / Silver Grey",
 
                 // Shades of Gray
-             
+
                 "#808080": "Gray",
                 "#696969": "DimGray",
                 "#A9A9A9": "DarkGray",
