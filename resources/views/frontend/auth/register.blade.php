@@ -425,9 +425,10 @@
                         </svg>
                     </div>
                     <h3 class="mb-2 text-2xl font-bold text-gray-900">Your Account Registration request send
-                        Successful!</h3>
-                    <p class="mb-6 text-gray-600">Your account Registration request has been send successfully and you
-                        will receive Confirmation mail soon.</p>
+                        Successfully successfully and you
+                        will receive Confirmation mail soon.</h3>
+                    {{--  <p class="mb-6 text-gray-600">Your account Registration request has been send successfully and you
+                        will receive Confirmation mail soon.</p>  --}}
                     <button onclick="closeModal()"
                         class="bg-[#54114C] text-white px-6 py-3 rounded-xl font-bold hover:bg-purple-700 transition">
                         Close
