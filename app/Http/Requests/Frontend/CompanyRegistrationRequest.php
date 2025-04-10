@@ -31,7 +31,7 @@ class CompanyRegistrationRequest extends FormRequest
             'gender' => 'required|in:male,female,other',
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
-            'supervisory' => 'required|string|max:255',
+            'supervisory' => 'nullable|string|max:255',
             'email' => 'required|string|email|max:255|unique:company_registrations,email',
             'new_password' => 'required|string|min:8|confirmed',
             'new_password_confirmation' => 'required|string|min:8',

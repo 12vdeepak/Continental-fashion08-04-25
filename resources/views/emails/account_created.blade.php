@@ -2,19 +2,34 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Account Created</title>
 </head>
 
 <body>
-    <h2>Dear {{ $first_name }},</h2>
+    <h2>Guten Tag, {{ $first_name }},</h2>
 
-    <p>Congratulations! Your account has been successfully created.</p>
-    <p>Your account is currently under review. Please wait for admin approval before logging into the website.</p>
+    <p>vielen Dank für Ihre Anmeldung und Ihr Interesse an einer Zusammenarbeit mit uns.</p>
 
-    <p>If you have any questions, feel free to contact our support team.</p>
+    <p>Wir bestätigen Ihre Registrierung auf unserer Homepage und informieren Sie, dass Sie in Kürze eine E-Mail mit der
+        Freigabe Ihres Logins für unseren Webshop erhalten:</p>
 
-    <p>Best regards,</p>
-    <p>The Continental Fashion Team</p>
+    <p>🌐 <a href="https://www.basicwear-international.de" target="_blank">www.basicwear-international.de</a></p>
+
+    <p>Wir freuen uns auf eine erfolgreiche Zusammenarbeit!</p>
+
+    <p>Mit freundlichen Grüßen,</p>
+
+    <p>Ihr Continental Fashion Merchandising Team</p>
+
+    <hr>
+
+    <p>
+        Continental Fashion Merchandising UG<br>
+        Herderstrasse 4, D-63165 Mühlheim am Main<br>
+        📞 Tel: +49 (0)6108 826960<br>
+        🌐 <a href="https://www.basicwear-international.de" target="_blank">www.basicwear-international.de</a>
+    </p>
 </body>
 
 </html>

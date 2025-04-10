@@ -148,7 +148,6 @@
                             <option value="" disabled selected>Select your gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
-                            <option value="other">Other</option>
                         </select>
                         <div class="absolute inset-y-0 flex items-center pointer-events-none right-4">
                             <img src="{{ asset('frontend/assets/images/arrowDown.svg') }}" alt="">
@@ -189,15 +188,18 @@
 
                 <div id="SuperVisory_And_Email " class="flex flex-col w-full gap-3 lg:flex-row lg:gap-10 ">
                     <div class="flex flex-col gap-1 text-[#6E6E6E] lg:w-1/2">
-                        <label for="supervisory" class="text-zinc-900">Supervisory <span
-                                class="text-red-500">*</span></label>
+                        <label for="supervisory" class="text-zinc-900">Supervisory</label>
                         <div class="relative">
-                            <select id="gender" name="supervisory"
+                            <select id="supervisory" name="supervisory"
                                 class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] pr-10 focus:outline-none focus:ring-2 focus:ring-purple-500 appearance-none w-full @error('supervisory') is-invalid @enderror">
-                                <option value="" disabled selected>Select Supervisory</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">Other</option>
+                                <option value="" selected>Select Position</option>
+                                <option value="Managing Director">Managing Director</option>
+                                <option value="Purchaser">Purchaser</option>
+                                <option value="Office Assistant">Office Assistant</option>
+                                <option value="Marketing Manager">Marketing Manager</option>
+                                <option value="Accountant">Accountant</option>
+                                <option value="HR Manager">HR Manager</option>
+                                <option value="CEO">CEO</option>
                             </select>
                             <div class="absolute inset-y-0 flex items-center pointer-events-none right-4">
                                 <img src="{{ asset('frontend/assets/images/arrowDown.svg') }}" alt="">
@@ -207,6 +209,7 @@
                             @enderror
                         </div>
                     </div>
+
                     <div class="flex flex-col gap-1 lg:w-1/2 ">
 
 
@@ -360,12 +363,12 @@
 
                 <div class="flex flex-col gap-1">
 
-                    <label for="note">Enter your note < /label>
-                            <textarea id="note" name="note" placeholder="Write Your Note Here..."
-                                class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 h-32 overflow-hidden resize-none @error('note') is-invalid @enderror">{{ old('note') }}</textarea>
-                            @error('note')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
+                    <label for="note">Enter your note </label>
+                    <textarea id="note" name="note" placeholder="Write Your Note Here..."
+                        class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 h-32 overflow-hidden resize-none @error('note') is-invalid @enderror">{{ old('note') }}</textarea>
+                    @error('note')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                 </div>
 
                 <div class="flex gap-2">
