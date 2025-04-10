@@ -22,6 +22,6 @@ class EnsureUserIsCompany
         }
 
         // If not authenticated, redirect to a public page or login
-        return redirect()->route('frontend.register')->with('message', 'You need to sign up or Login to proceed.');
+        return redirect()->route('frontend.login')->with('message', 'You need to sign up or Login to proceed.');
     }
 }
