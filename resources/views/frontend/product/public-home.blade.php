@@ -213,6 +213,10 @@
                             @endforeach
                         </div>
                     @endforeach
+                    <!-- Pagination Links -->
+                    <div class="w-full mt-8">
+                        {{ $products->links() }}
+                    </div>
                 @endif
             </div>
 

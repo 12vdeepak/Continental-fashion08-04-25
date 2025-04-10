@@ -18,20 +18,21 @@ class FrontendController extends Controller
      */
     public function publicHome()
     {
-        $products = Product::with(['brands', 'images', 'colors', 'sizes'])->get();
+        $products = Product::with(['brands', 'images', 'colors', 'sizes'])->paginate(6);
         $categories = Category::with('subcategories')->get();
         $banners = Banner::all();
         $newsOffers = NewsOffer::where('status', 1)->get();
-        $brands = Brand::whereNotNull('brand_logo')->get(); // Fetch brands with logos
+        $brands = Brand::whereNotNull('brand_logo')->get();
 
         return view('frontend.product.public-home', compact('products', 'categories', 'banners', 'newsOffers', 'brands'));
     }
 
 
 
+
     public function publicPrivateHome()
     {
-        $products = Product::with(['brands', 'images', 'colors', 'sizes'])->get();
+        $products = Product::with(['brands', 'images', 'colors', 'sizes'])->paginate(6);
         $categories = Category::with('subcategories')->get();
         $banners = Banner::all();
         $newsOffers = NewsOffer::where('status', 1)->get();
@@ -65,8 +66,8 @@ class FrontendController extends Controller
         $faqs = Faq::where('status', 1)->get();
         return view('frontend.faqs', compact('faqs', 'categories'));
     }
-    
-     public function privacy()
+
+    public function privacy()
     {
         $categories = Category::with('subcategories')->get();
 
