@@ -71,7 +71,7 @@
                     <a href="{{ route('frontend.register') }}">
                         <div class="registerButton">
                             <button
-                                class="rounded-xl bg-[#E7E6E7] w-full p-[15px] text-[#54114C] font-bold mt-[60px]">Register
+                                class="bg-[#54114C] text-white p-[16px] rounded-2xl cursor-pointer hover:bg-purple-700 transition text-[16px] font-bold ">Register
                                 Account</button>
                         </div>
                     </a>

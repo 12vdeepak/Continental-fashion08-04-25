@@ -108,10 +108,11 @@
 
                             <!-- Buttons -->
                             <div class="buttonsDiv flex justify-end font-bold items-center gap-5 mt-5">
-                                <div
+                                <a href="{{ route('frontend.manageprofile') }}"
                                     class="button w-[150px] bg-gray-100 flex justify-center items-center rounded-2xl px-6 py-4 text-[#000000]">
                                     Cancel
-                                </div>
+                                </a>
+
                                 <button type="submit"
                                     class="button p-6 bg-[#54114C] text-[#ffffff] w-[150px] flex justify-center items-center rounded-2xl px-6 py-4">
                                     Save

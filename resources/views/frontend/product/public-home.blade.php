@@ -95,7 +95,7 @@
 
             <div class="flex flex-col items-center justify-center gap-3 heading_description">
                 <div class="title text-[58px] font-bold text-center leading-[75px]">
-                    Benefits Of Purchasing <br> With Us
+                    Our Services
                 </div>
                 <div class="description text-md text-[#6E6E6E] text-center">
                     Browse our exclusive collections designed to fit every occasion and style. <br>
