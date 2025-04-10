@@ -37,7 +37,7 @@ class CompanyRegistrationRequest extends FormRequest
             'new_password_confirmation' => 'required|string|min:8',
             'vat_id_number' => 'required|string|max:255',
             'business_registration' => 'nullable|file|mimes:pdf|max:2048',
-            'note' => 'required|string',
+            'note' => 'nullable|string',
             'terms_accepted' => 'accepted',
         ];
     }
