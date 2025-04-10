@@ -223,6 +223,7 @@ Route::get('/subcategory/{id}', [FrontendProductController::class, 'subcategoryP
 
 
 
+
 // Private (Logged-In) Homepage
 Route::middleware(['company', 'company.auth.status'])->group(function () {
 
@@ -244,7 +245,6 @@ Route::middleware(['company', 'company.auth.status'])->group(function () {
     Route::get('/special-product', [FrontendProductController::class, 'specialProduct'])->name('frontend.specialproduct');
     // Route::get('/select-address', [FrontendProductController::class, 'selectAddress'])->name('frontend.select-address');
 
-    Route::get('/subcategory/{id}', [FrontendProductController::class, 'subcategoryProducts'])->name('frontend.subcategory.products');
 
 
     Route::resource('addresses', AddressController::class);
