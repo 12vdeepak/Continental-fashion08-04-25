@@ -287,6 +287,15 @@
                             <br>
                         <p class="mt-5">
 
+                            As a one-stop supplier, we offer a wide range of products, including clothing, bags, aprons, and
+                            caps, along with professional embroidery and printing services. In addition to our own brands
+                            (BASIC WEAR, BLANKCHEQUE, BLUE PACIFIC), we work with top European brands to meet customer
+                            needs. We also handle custom orders with high-quality, certified production.
+
+                        </p>
+
+                        <p class="mt-5">
+
                             Sustainability is important to us, and we are using more eco-friendly materials to reduce our
                             impact on the environment. Our focus on quality, reliability, and customer satisfaction has
                             helped us build long-term trust. Whether you need bulk orders or customized textiles, we are
@@ -314,11 +323,18 @@
                             <br>
                         <p class="mt-5">
 
-                            We care about the environment and are using more eco-friendly materials to reduce our impact on
-                            the planet. Our focus is on providing great products, reliable service, and flexible solutions.
-                            That’s why customers continue to trust us—whether they need large orders or customized textiles,
-                            we make the process easy and efficient.
+                            We make sure our products are made under fair and ethical conditions. Our manufacturing partners
+                            in Europe and the Far East follow strict quality and labor standards, ensuring safe and
+                            responsible production.
 
+                        </p>
+
+                        <p class="mt-5">
+                            Customers choose us because we offer everything in one place. We supply clothing, bags, aprons,
+                            caps, and more, and we also provide embroidery and printing services to customize products. In
+                            addition to our own brands (BASIC WEAR, BLANKCHEQUE, BLUE PACIFIC), we work with well-known
+                            European brands to give our customers more options. We also handle custom orders, making sure
+                            they meet high-quality standards and certifications.
                         </p>
 
                         </p>
