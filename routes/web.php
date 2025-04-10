@@ -214,6 +214,8 @@ Route::get('/search', [SearchController::class, 'index'])->name('search');
 
 Route::get('/cookie-settings', [CookieSettingsController::class, 'index'])->name('cookie.settings');
 Route::post('/cookie-settings', [CookieSettingsController::class, 'save'])->name('cookie.save');
+Route::get('/about-us', [FrontendController::class, 'aboutUs'])->name('frontend.aboutus');
+
 
 
 
@@ -224,7 +226,6 @@ Route::post('/cookie-settings', [CookieSettingsController::class, 'save'])->name
 Route::middleware(['company', 'company.auth.status'])->group(function () {
 
     Route::get('/user-dashboard', [FrontendController::class, 'publicPrivateHome'])->name('frontend.home.private');
-    Route::get('/about-us', [FrontendController::class, 'aboutUs'])->name('frontend.aboutus');
     Route::get('/all-products', [FrontendProductController::class, 'allProduct'])->name('frontend.all.product');
     Route::any('/confirm-order', [FrontendProductController::class, 'confirmOrder'])->name('frontend.confirm-order');
 
