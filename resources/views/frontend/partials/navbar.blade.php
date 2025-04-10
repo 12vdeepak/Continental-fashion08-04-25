@@ -58,7 +58,7 @@
 
         <li>
 
-            <a href="{{ route('frontend.aboutus') }}">Home</a>
+            <a href="{{ route('frontend.aboutus') }}">About Us</a>
         </li>
 
 
