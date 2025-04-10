@@ -337,6 +337,13 @@
                             they meet high-quality standards and certifications.
                         </p>
 
+                        <p class="mt-5">
+                            We care about the environment and are using more eco-friendly materials to reduce our impact on
+                            the planet. Our focus is on providing great products, reliable service, and flexible solutions.
+                            That’s why customers continue to trust us—whether they need large orders or customized textiles,
+                            we make the process easy and efficient.
+                        </p>
+
                         </p>
                     </div>
 
