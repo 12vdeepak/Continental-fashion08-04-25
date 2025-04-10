@@ -319,8 +319,7 @@
                     <!-- Business Registration Upload -->
 
                     <div class="flex flex-col gap-1">
-                        <label for="businessRegistration">Your Business Registration <span
-                                class="text-red-500">*</span>
+                        <label for="businessRegistration">Your Business Registration
                             <span class="text-sm text-blue-500">(only with new customer registration)</span></label>
 
                         <div
