@@ -41,7 +41,7 @@
                     </button>
 
                     <!-- Filter Section (Hidden by Default on Mobile) -->
-                    <div id="filterMenu"
+                    {{--  <div id="filterMenu"
                         class="hidden lg:block absolute top-0 left-0 w-full h-screen bg-white p-4 shadow-lg z-50 sm:relative sm:w-[25%] sm:h-auto sm:bg-transparent sm:p-0 sm:shadow-none lg:w-[100%] ">
 
                         <!-- Close Button for Mobile -->
@@ -88,7 +88,7 @@
 
                         <!-- Clear Filter Button -->
                         <button class="mt-5 text-[#427CD4] underline" onclick="clearFilters()">Clear All Filters</button>
-                    </div>
+                    </div>  --}}
 
                     <!-- JavaScript for Toggle -->
                     <script>
@@ -151,7 +151,7 @@
 
                         <div class="sort">
                             <div class="relative inline-block text-left">
-                                <div class="flex items-center space-x-2 cursor-pointer" onclick="toggleDropdown()">
+                                {{--  <div class="flex items-center space-x-2 cursor-pointer" onclick="toggleDropdown()">
                                     <span class="text-sm text-gray-500">Sort by</span>
                                     <span class="h-5 border-l-2 border-red-600"></span>
                                     <span class="text-sm lg:font-medium font-regular">Popularity</span>
@@ -161,7 +161,7 @@
                                             d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                                             clip-rule="evenodd" />
                                     </svg>
-                                </div>
+                                </div>  --}}
                                 <!-- Dropdown Menu -->
                                 <div id="dropdownMenu"
                                     class="absolute right-0 hidden w-40 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-5">
