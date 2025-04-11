@@ -146,7 +146,7 @@
             <div id="google_translate_element"></div>
         </div>  --}}
 
-        <div class="flex items-center gap-4">
+        <div>
             <span class="text-base text-white">Select Language</span>
             <div id="google_translate_element"></div>
         </div>
