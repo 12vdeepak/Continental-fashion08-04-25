@@ -146,10 +146,11 @@
             <div id="google_translate_element"></div>
         </div>  --}}
 
-        <div>
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-1 md:gap-5">
             <span class="text-base text-white">Select Language</span>
             <div id="google_translate_element"></div>
         </div>
+
 
 
 
