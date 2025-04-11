@@ -49,7 +49,7 @@ class ProductRequest extends FormRequest
             'sale' => 'required|in:yes,no',
             'sale_percentage' => 'nullable|integer|min:0|max:100',
             'promotion_id' => 'nullable|exists:promotionals,id',
-            'wear_id' => 'nullable|exists:wears,id',
+            'wear_id' => 'required|exists:wears,id',
             'remarks' => 'nullable|string',
         ];
 

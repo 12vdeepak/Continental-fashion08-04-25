@@ -104,7 +104,7 @@
                 <!-- section 3 -->
                 <div class="flex flex-col items-center justify-center headAndDescription">
                     <div class="head text-[32px] lg:text-[48px] myProfileHead font-bold">
-                        Our Service
+                        Our Services
                     </div>
                     <p class="text-[#6E6E6E] text-center lg:w-1/2">
                         Our custom-made products combine precision and creativity. Whether promotional textiles, leather
