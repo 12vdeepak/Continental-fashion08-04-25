@@ -13,8 +13,8 @@
             <!-- Full Search Bar (Only Visible on Larger Screens) -->
             <form action="{{ route('search') }}" method="GET"
                 class="items-center hidden gap-3 px-3 py-2 bg-white border border-gray-300 lg:flex rounded-xl w-60">
-                <img src="{{ asset('frontend/assets/images/search.svg') }}" alt="Search Icon" class="w-5 h-5"
-                    style="filter: brightness(0);">
+                <img src="{{ asset('frontend/assets/images/search.svg') }}" alt="Search Icon"
+                    class="w-10 lg:w-5 h-10 lg:h-5" style="filter: brightness(0);">
                 <input type="text" name="query" placeholder="Search"
                     class="w-full text-black placeholder-gray-600 bg-transparent outline-none" required />
                 <button type="submit" class="hidden"></button> <!-- Triggers form submission when Enter is pressed -->
@@ -26,7 +26,8 @@
         <div class="relative flex items-center mr-3 cursor-pointer">
             @if (session()->has('company_user_id'))
                 <a href="{{ route('frontend.my-cart') }}" class="relative">
-                    <img src="{{ asset('frontend/assets/images/cart.svg') }}" alt="Cart" class="w-8 h-8">
+                    <img src="{{ asset('frontend/assets/images/cart.svg') }}" alt="Cart"
+                        class="w-20 h-20 lg:h-8 lg:w-8">
                     @if ($cartCount > 0)
                         <span
                             class="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full min-w-[20px] text-center">
@@ -36,7 +37,8 @@
                 </a>
             @else
                 <a href="javascript:void(0);" onclick="showLoginToast();" class="relative">
-                    <img src="{{ asset('frontend/assets/images/cart.svg') }}" alt="Cart" class="w-8 h-8">
+                    <img src="{{ asset('frontend/assets/images/cart.svg') }}" alt="Cart"
+                        class="w-20 h-20 lg:h-8 lg:w-8">
                 </a>
             @endif
         </div>
