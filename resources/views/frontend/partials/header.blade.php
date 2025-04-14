@@ -59,7 +59,7 @@
                         <!-- User Icon (Bigger for Mobile) -->
                         <a href="{{ route('frontend.manageprofile') }}">
                             <img src="{{ asset('frontend/assets/images/User Icon.svg') }}" alt="User Icon"
-                                class="w-10 h-10 md:w-6 md:h-6"> <!-- Larger icon on mobile -->
+                                class="w-20 h-20 md:w-6 md:h-6 lg:w-10 lg:h-10"> <!-- Larger icon on mobile -->
                         </a>
 
                         <!-- Button to Toggle Dropdown -->
