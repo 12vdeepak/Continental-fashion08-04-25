@@ -86,7 +86,7 @@
             @else
                 <a href="{{ route('frontend.login') }}">
                     <img src="{{ asset('frontend/assets/images/User Icon.svg') }}" alt="User Icon"
-                        class="w-10 h-10 md:w-6 md:h-6"> <!-- Larger icon for mobile -->
+                        class="w-20 h-20 lg:h-8 lg:w-8"> <!-- Larger icon for mobile -->
                 </a>
                 <a href="{{ route('frontend.login') }}">
                     <span class="hidden text-base md:flex"> Login </span>
