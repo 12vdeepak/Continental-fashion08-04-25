@@ -41,6 +41,35 @@
                                             {{ $product->brand_name }}
                                         </div>
 
+                                        {{-- Available Sizes --}}
+                                        @php
+                                            $uniqueSizes = collect();
+
+                                            foreach ($product->images as $image) {
+                                                foreach ($image->sizes as $size) {
+                                                    $uniqueSizes->push($size);
+                                                }
+                                            }
+
+                                            $uniqueSizes = $uniqueSizes->unique('id');
+                                        @endphp
+
+                                        <div class="mb-3">
+                                            <span class="block text-sm font-medium text-gray-700 mb-1">Sizes:</span>
+                                            @if ($uniqueSizes->count() > 0)
+                                                <div class="flex flex-wrap gap-2">
+                                                    @foreach ($uniqueSizes as $size)
+                                                        <span
+                                                            class="inline-block px-3 py-1 text-sm font-semibold text-blue-700 bg-blue-100 rounded-full">
+                                                            {{ strtoupper($size->size_name) }}
+                                                        </span>
+                                                    @endforeach
+                                                </div>
+                                            @else
+                                                <span class="text-sm text-gray-500">Not available</span>
+                                            @endif
+                                        </div>
+
                                         @php
                                             $priceToShow = $product->price;
                                             if (session()->has('company_user_id')) {

@@ -98,8 +98,7 @@
                     Our Services
                 </div>
                 <div class="description text-md text-[#6E6E6E] text-center">
-                    Browse our exclusive collections designed to fit every occasion and style. <br>
-                    From bold to classic, we’ve got you covered
+                   Our custom-made products combine precision and creativity. Whether promotional textiles, leather goods, jute bags, or corporate fashion – we realize tailor-made designs, colors, and developments according to customer requirements, with the highest quality and on-time delivery.
                 </div>
             </div>
 
