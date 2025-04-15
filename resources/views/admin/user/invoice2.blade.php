@@ -86,7 +86,7 @@
     <div
         style="color: #374151; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; padding-top: 16px; padding-bottom: 16px; margin-bottom: 16px;">
         <p>Continental Fashion Merchandising UG (Limited Liability)</p>
-        <p>Herderstr. 4 ▪ 63165 Mühlheim am Main</p>
+        <p>Herderstr. 4 63165 Mühlheim am Main</p>
     </div>
 
     <table style="width: 100%; border-collapse: collapse;">
@@ -232,15 +232,15 @@
 
     <div
         style="margin-top: 1.5rem; border-top: 1px solid #9CA3AF; padding-top: 1rem; font-size: 0.875rem; text-align: center; font-family: sans-serif;">
-        <p><strong>Address:</strong> Herderstr. 4 ▪ D-63165 Mühlheim am Main</p>
-        <p><strong>Telephone:</strong> +49 (0)6108 826960 ▪ <strong>Fax:</strong> +49 (0)6108 826962 ▪
+        <p><strong>Address:</strong> Herderstr. 4 D-63165 Mühlheim am Main</p>
+        <p><strong>Telephone:</strong> +49 (0)6108 826960 <strong>Fax:</strong> +49 (0)6108 826962
             <strong>Email:</strong> sales@continental-fashion.com
         </p>
-        <p><strong>Managing Director:</strong> Bimal Roy ▪ <strong>Amtsgericht Offenbach HRB 47047</strong></p>
+        <p><strong>Managing Director:</strong> Bimal Roy <strong>Amtsgericht Offenbach HRB 47047</strong></p>
         <p><strong>VAT Number:</strong> DE287078499</p>
         <p><strong>Bank details:</strong> Commerzbank Mühlheim am Main</p>
-        <p><strong>Account number:</strong> 0453 9615 00 ▪ <strong>Bank sort code:</strong> 5054 0028</p>
-        <p><strong>IBAN:</strong> DE41 5054 0028 0453 9615 00 ▪ <strong>BIC:</strong> COBADEFFXXX</p>
+        <p><strong>Account number:</strong> 0453 9615 00 <strong>Bank sort code:</strong> 5054 0028</p>
+        <p><strong>IBAN:</strong> DE41 5054 0028 0453 9615 00 <strong>BIC:</strong> COBADEFFXXX</p>
     </div>
 
 </body>
