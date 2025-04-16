@@ -69,11 +69,6 @@
             </a>
         </li>
 
-        <div class="md:flex md:flex-col hidden md:flex-row items-start md:items-center gap-1 md:gap-5">
-            <span class="text-base text-white">Select Language</span>
-            <div id="google_translate_element"></div>
-        </div>
-
     </ul>
 
     <!-- Download Button -->
@@ -89,74 +84,3 @@
 
 
 </div>
-
-
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,fr,es,de,hi',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            },
-            'google_translate_element'
-        );
-    }
-</script>
-<script>
-    // Remove the top iframe (banner)
-    document.addEventListener("DOMContentLoaded", function() {
-        let interval = setInterval(function() {
-            const bannerFrame = document.querySelector(".goog-te-banner-frame");
-            if (bannerFrame) {
-                bannerFrame.style.display = "none";
-                document.body.style.top = "0px";
-                clearInterval(interval);
-            }
-        }, 100); // Check every 100ms until it's gone
-    });
-</script>
-<script>
-    // Keep removing banner if it appears dynamically
-    function removeGoogleTranslateBanner() {
-        let banner = document.querySelector('.goog-te-banner-frame');
-        let htmlEl = document.documentElement;
-
-        if (banner) {
-            banner.style.display = 'none';
-        }
-
-        if (htmlEl.style.top) {
-            htmlEl.style.top = '0px';
-        }
-
-        document.body.style.top = '0px';
-    }
-
-    // Run immediately and keep checking every second
-    setInterval(removeGoogleTranslateBanner, 1000);
-</script>
-
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-{{--  <style>
-    /* Hide top frame (Google Translate toolbar) */
-    .goog-te-banner-frame.skiptranslate {
-        display: none !important;
-    }
-
-    /* Prevent body from getting pushed down */
-    body {
-        top: 0px !important;
-        position: relative !important;
-    }
-
-    /* Optional: hide any leftover Google elements */
-    .goog-te-gadget-icon,
-    .goog-te-menu-value span,
-    .goog-te-menu-frame,
-    .goog-te-balloon-frame {
-        display: none !important;
-    }
-</style>  --}}
-
-<style>
