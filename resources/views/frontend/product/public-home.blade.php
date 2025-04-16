@@ -182,10 +182,10 @@
                                     <div
                                         class="flex flex-col w-full h-full transition-shadow duration-300 bg-white shadow-md productCard rounded-2xl hover:shadow-lg">
                                         <div
-                                            class="w-full h-[300px] lg:h-full overflow-hidden flex justify-center items-center bg-gray-100 rounded-t-2xl">
+                                            class="w-full h-[300px] lg:h-full overflow-hidden flex justify-center items-center  md:bg-gray-100 rounded-t-2xl">
                                             @if ($product->images->isNotEmpty())
                                                 <img src="{{ asset('storage/' . $product->images->first()->image_path) }}"
-                                                    class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 rounded-t-2xl"
+                                                    class="object-content md:object-cover w-full h-full transition-transform duration-300 hover:scale-105 rounded-t-2xl"
                                                     alt="{{ $product->product_name }}">
                                             @else
                                                 <img src="{{ asset('frontend/assets/images/default-placeholder.jpg') }}"
