@@ -98,7 +98,9 @@
                     Our Services
                 </div>
                 <div class="description text-md text-[#6E6E6E] text-center">
-                   Our custom-made products combine precision and creativity. Whether promotional textiles, leather goods, jute bags, or corporate fashion – we realize tailor-made designs, colors, and developments according to customer requirements, with the highest quality and on-time delivery.
+                    Our custom-made products combine precision and creativity. Whether promotional textiles, leather goods,
+                    jute bags, or corporate fashion – we realize tailor-made designs, colors, and developments according to
+                    customer requirements, with the highest quality and on-time delivery.
                 </div>
             </div>
 
@@ -178,7 +180,7 @@
                             @foreach ($productRow as $product)
                                 <a href="{{ route('frontend.all.product-page', $product->id) }}" class="w-full">
                                     <div
-                                        class="flex flex-col w-full transition-shadow duration-300 bg-white shadow-md productCard rounded-2xl hover:shadow-lg">
+                                        class="flex flex-col w-full h-full transition-shadow duration-300 bg-white shadow-md productCard rounded-2xl hover:shadow-lg">
                                         <div
                                             class="w-full h-[300px] lg:h-full overflow-hidden flex justify-center items-center bg-gray-100 rounded-t-2xl">
                                             @if ($product->images->isNotEmpty())
