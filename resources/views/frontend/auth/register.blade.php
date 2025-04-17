@@ -140,22 +140,36 @@
                     </div>
 
                 </div>
-                <div class="flex flex-col gap-1 text-[#6E6E6E]">
-                    <label for="gender" class="text-zinc-900">Gender <span class="text-red-500">*</span></label>
-                    <div class="relative">
-                        <select id="gender" name="gender"
-                            class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] pr-10 focus:outline-none focus:ring-2 focus:ring-purple-500 appearance-none w-full @error('gender') is-invalid @enderror">
-                            <option value="" disabled selected>Select your gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                        <div class="absolute inset-y-0 flex items-center pointer-events-none right-4">
-                            <img src="{{ asset('frontend/assets/images/arrowDown.svg') }}" alt="">
+                <div id="house_number " class="flex flex-col w-full gap-3 lg:flex-row lg:gap-10 ">
+                    <div class="flex flex-col gap-1 lg:w-1/2">
+                        <label for="gender" class="text-zinc-900">Gender <span class="text-red-500">*</span></label>
+                        <div class="relative">
+                            <select id="gender" name="gender"
+                                class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] pr-10 focus:outline-none focus:ring-2 focus:ring-purple-500 appearance-none w-full @error('gender') is-invalid @enderror">
+                                <option value="" disabled selected>Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <div class="absolute inset-y-0 flex items-center pointer-events-none right-4">
+                                <img src="{{ asset('frontend/assets/images/arrowDown.svg') }}" alt="">
+                            </div>
+                            @error('gender')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
-                        @error('gender')
+                    </div>
+
+                    <div class="flex flex-col gap-1 lg:w-1/2">
+
+
+                        <label for="house_number">House Number <span class="text-red-500">*</span></label>
+                        <input type="text" id="house_number" name="house_number" placeholder="Enter House Number"
+                            class="  border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 @error('country') is-invalid @enderror">
+                        @error('house_number')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
+
                 </div>
                 <!-- == Name field == -->
 
@@ -324,24 +338,31 @@
 
                         <div
                             class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] flex items-center justify-between cursor-pointer">
-                            <span id="fileName" class="text-gray-500">Upload your business registration</span>
+                            <!-- Dynamic File Name Display -->
+                            <span id="fileName" class="text-gray-500">
+                                Upload your business registration
+                            </span>
+
+                            <!-- Hidden File Input -->
                             <input type="file" name="business_registration_file" id="businessRegistration"
                                 class="hidden @error('business_registration_file') is-invalid @enderror"
-                                accept=".pdf">
+                                accept=".pdf" onchange="showSelectedFileName(this)">
+
+                            <!-- Upload Button/Icon -->
                             <label for="businessRegistration" class="cursor-pointer">
                                 <svg class="w-5 h-5 text-gray-500 mt-[4px]" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 10l7-7m0 0l7 7m-7-7v14"></path>
+                                        d="M3 10l7-7m0 0l7 7m-7-7v14" />
                                 </svg>
-
-
                             </label>
+
                             @error('business_registration_file')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
-
                         </div>
+
+
                         <div class="flex flex-col gap-2 mt-3 instructionBusinessReg">
                             <p class="text-sm font-medium text-blue-500">Note: Upload only pdf</p>
                             {{--  <p class="text-[#6E6E6E]"> <span class="font-medium text-zinc-700"> Alternatively: </span>

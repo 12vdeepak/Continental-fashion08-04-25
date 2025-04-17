@@ -42,6 +42,7 @@
                             <tr class="text-left bg-gray-100">
                                 <th class="p-3">S.no</th>
                                 <th class="p-3">Product</th>
+                                <th class="p-3">Product Name</th>
                                 <th class="p-3">Color</th>
                                 <th class="p-3">Size</th>
                                 <th class="p-3">Quantity</th>
@@ -68,6 +69,8 @@
                                         <img src="{{ $imagePath }}" class="w-12 h-12 mr-3 rounded-lg" alt="Product">
                                         <span>{{ $item->product->name }}</span>
                                     </td>
+                                    <td class="p-3">{{ $item->product->product_name }}</td>
+
 
                                     <td class="p-3">{{ $item->color->color_code ?? 'N/A' }}</td>
                                     <td class="p-3">{{ $item->size->size_name ?? 'N/A' }}</td>

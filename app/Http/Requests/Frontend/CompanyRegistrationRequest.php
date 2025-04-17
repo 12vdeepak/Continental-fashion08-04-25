@@ -23,6 +23,7 @@ class CompanyRegistrationRequest extends FormRequest
     {
         return [
             'company_name' => 'required|string|max:255',
+            'house_number' => 'required',
             'street' => 'required|string|max:255',
             'zip_code' => 'required|string|max:20',
             'city' => 'required|string|max:255',

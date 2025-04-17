@@ -36,9 +36,9 @@
     <h3>Was wir Ihnen sonst noch bieten:</h3>
     <ul>
         <li>Persönlicher, freundlicher und kompetenter Service</li>
-        <li>Umfangreiches Sortiment: 34 Marken, über 3000 Styles und ca. 100.000 Artikelvarianten</li>
+        <li>Umfangreiches Sortiment: 15 Marken, über 500 Styles und ca. 1500 Artikelvarianten</li>
         <li>Keine versteckten Nebenkosten wie Mindermengen- oder Verpackungszuschläge</li>
-        <li>Neutrale digitale Kataloge (verschiedene Cover-Optionen, mit oder ohne Preise)</li>
+        <li>Neutrale digitale Kataloge</li>
         <li>Umfangreiche Bilddatenbank/Gallery Server</li>
         <li>Sonderanfertigungen nach Ihren Wünschen — Produkte, Farben, Marken, Veredelung oder Verpackung</li>
     </ul>

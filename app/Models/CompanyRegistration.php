@@ -31,6 +31,7 @@ class CompanyRegistration extends Model
         'business_registration_file',
         'note',
         'terms_accepted',
+        'house_number'
 
     ];
 

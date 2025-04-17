@@ -302,7 +302,16 @@
 
 
 
-
+    <script>
+        function showSelectedFileName(input) {
+            const fileNameSpan = document.getElementById('fileName');
+            if (input.files.length > 0) {
+                fileNameSpan.textContent = input.files[0].name;
+            } else {
+                fileNameSpan.textContent = 'Upload your business registration';
+            }
+        }
+    </script>
 
     <script>
         function changeImage(imageSrc) {

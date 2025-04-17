@@ -117,6 +117,7 @@ class AuthController extends Controller
             // Create the registration record
             $registration = CompanyRegistration::create([
                 'company_name'                => $request->input('company_name'),
+                'house_number'                => $request->input('house_number'),
                 'street'                      => $request->input('street'),
                 'zip_code'                    => $request->input('zip_code'),
                 'city'                        => $request->input('city'),
