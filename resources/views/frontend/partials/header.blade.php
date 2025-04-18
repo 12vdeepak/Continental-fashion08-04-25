@@ -310,7 +310,7 @@
         display: flex;
         justify-content: flex-end;
         padding: 10px 20px;
-        background-color: #4b0a49;
+        {{--  background-color: #4b0a49;  --}}
         /* Matching your theme */
     }
 

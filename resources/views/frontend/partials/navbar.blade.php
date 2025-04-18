@@ -21,7 +21,7 @@
 
             <!-- Dropdown Menu -->
             <div id="collection-dropdown"
-                class="lg:absolute lg:top-full lg:left-0 lg:w-auto lg:min-w-[700px] lg:max-w-[90vw]
+                class="lg:absolute lg:top-1/2 lg:left-0 lg:w-auto lg:min-w-[700px] lg:max-w-[90vw]
                 lg:max-h-[80vh] lg:overflow-y-auto lg:mt-2 lg:bg-white lg:z-50 lg:hidden
                 lg:group-hover:flex lg:flex-col lg:shadow-lg border border-gray-200 rounded-lg
                 hidden md:absolute md:left-0 md:hidden">

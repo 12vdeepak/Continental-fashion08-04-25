@@ -1,11 +1,11 @@
 @extends('frontend.layouts.app')
 @section('content')
     <main>
-        <div class="container mx-auto py-10">
-            <h1 class="text-2xl font-bold mb-5 text-center">{{ $subcategory->subcategory_name }}</h1>
+        <div class="container py-10 mx-auto">
+            <h1 class="mb-5 text-2xl font-bold text-center">{{ $subcategory->subcategory_name }}</h1>
 
             @if ($subcategory->products->isNotEmpty())
-                <div class="productSection mt-5 flex flex-col gap-10">
+                <div class="flex flex-col gap-10 mt-5 productSection">
                     @foreach ($subcategory->products->chunk(3) as $chunk)
                         <div
                             class="productRow grid
@@ -13,25 +13,25 @@
 
                             @foreach ($chunk as $product)
                                 <a href="{{ route('frontend.all.product-page', $product->id) }}">
-                                    <div class="relative product p-4 rounded-lg shadow-md">
+                                    <div class="relative p-4 rounded-lg shadow-md product">
                                         <!-- Removed 'border' class -->
 
                                         @if ($product->sale_percentage)
                                             <div
-                                                class="absolute top-5 left-2 bg-sky-500 text-white text-sm px-3 py-1 rounded-md">
+                                                class="absolute px-3 py-1 text-sm text-white rounded-md top-5 left-2 bg-sky-500">
                                                 {{ $product->sale_percentage }}% offer
                                             </div>
                                         @else
                                             <div
-                                                class="absolute top-5 left-2 bg-gray-400 text-white text-sm px-3 py-1 rounded-md">
+                                                class="absolute px-3 py-1 text-sm text-white bg-gray-400 rounded-md top-5 left-2">
                                                 No Discount
                                             </div>
                                         @endif
 
-                                        <div class="productImage mb-4">
+                                        <div class="mb-4 productImage">
                                             <img src="{{ asset('storage/' . optional($product->images->first())->image_path) }}"
                                                 alt="{{ $product->product_name }}"
-                                                class="w-full h-[250px] object-cover rounded-xl border-0 shadow-none">
+                                                class="w-full h-[250px] object-contain rounded-xl border-0 shadow-none">
                                         </div>
 
 
@@ -55,7 +55,7 @@
                                         @endphp
 
                                         <div class="mb-3">
-                                            <span class="block text-sm font-medium text-gray-700 mb-1">Sizes:</span>
+                                            <span class="block mb-1 text-sm font-medium text-gray-700">Sizes:</span>
                                             @if ($uniqueSizes->count() > 0)
                                                 <div class="flex flex-wrap gap-2">
                                                     @foreach ($uniqueSizes as $size)
@@ -93,7 +93,7 @@
                     @endforeach
                 </div>
             @else
-                <p class="text-gray-500 text-center">No products found in this subcategory.</p>
+                <p class="text-center text-gray-500">No products found in this subcategory.</p>
             @endif
         </div>
     </main>
