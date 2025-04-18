@@ -288,8 +288,16 @@
 
     /* Hide additional UI elements */
     .goog-te-menu-value span,
-    .goog-te-gadget-icon {
+    {{--  .goog-te-gadget-icon {
         display: none !important;
+    }  --}} .goog-te-gadget-icon {
+        display: inline-block !important;
+        margin-right: 6px;
+    }
+
+    /* Also make sure this doesn't hide important elements */
+    .goog-te-menu-value span {
+        display: inline-block !important;
     }
 
     /* Optional: hide the pop-up */

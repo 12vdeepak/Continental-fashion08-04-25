@@ -95,16 +95,20 @@
                 </div>
                 <!-- zipcode city -->
                 <div id="zipCode_City" class="flex flex-col w-full gap-3 lg:flex-row lg:gap-10 ">
+
+
+
                     <div class="flex flex-col gap-1 lg:w-1/2">
 
 
-                        <label for="zipCode">Zip Code <span class="text-red-500">*</spa></label>
-                        <input type="text" name="zip_code" id="zipCode" placeholder="Enter Your Zip Code"
-                            class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 @error('zip_code') is-invalid @enderror">
-                        @error('zip_code')
+                        <label for="house_number">House Number <span class="text-red-500">*</span></label>
+                        <input type="text" id="house_number" name="house_number" placeholder="Enter House Number"
+                            class="  border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 @error('country') is-invalid @enderror">
+                        @error('house_number')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
+
                     <div class="flex flex-col gap-1 lg:w-1/2">
 
 
@@ -141,8 +145,20 @@
 
                 </div>
                 <div id="house_number " class="flex flex-col w-full gap-3 lg:flex-row lg:gap-10 ">
+
                     <div class="flex flex-col gap-1 lg:w-1/2">
-                        <label for="gender" class="text-zinc-900">Gender <span class="text-red-500">*</span></label>
+
+
+                        <label for="zipCode">Zip Code <span class="text-red-500">*</spa></label>
+                        <input type="text" name="zip_code" id="zipCode" placeholder="Enter Your Zip Code"
+                            class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 @error('zip_code') is-invalid @enderror">
+                        @error('zip_code')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="flex flex-col gap-1 lg:w-1/2">
+                        <label for="gender" class="text-zinc-900">Gender <span
+                                class="text-red-500">*</span></label>
                         <div class="relative">
                             <select id="gender" name="gender"
                                 class="border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] pr-10 focus:outline-none focus:ring-2 focus:ring-purple-500 appearance-none w-full @error('gender') is-invalid @enderror">
@@ -159,16 +175,6 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col gap-1 lg:w-1/2">
-
-
-                        <label for="house_number">House Number <span class="text-red-500">*</span></label>
-                        <input type="text" id="house_number" name="house_number" placeholder="Enter House Number"
-                            class="  border border-gray-300 bg-[#F4F4F4] rounded-2xl p-[16px] focus:outline-none focus:ring-2 focus:ring-purple-500 @error('country') is-invalid @enderror">
-                        @error('house_number')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div>
 
                 </div>
                 <!-- == Name field == -->
